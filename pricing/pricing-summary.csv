@@ -1,0 +1,22 @@
+Scenario,Customers,Storage (GB),Monthly Reads,Monthly Writes,Storage Cost,Read Cost,Write Cost,PITR Cost,GSI Cost,Total Monthly,Annual Cost
+Small Business,1000,5,100000,20000,$0.00,$0.01,$0.01,$1.00,$0.14,$1.16,$13.92
+Medium Business,10000,50,1000000,200000,$6.25,$0.13,$0.13,$10.00,$1.26,$17.77,$213.24
+Large Enterprise,100000,500,10000000,2000000,$118.75,$1.25,$1.25,$100.00,$12.63,$233.88,$2806.56
+
+Service Component,Unit,Price (USD),Description
+Read Request Units,Per Million Requests,$0.125,Standard read operations
+Write Request Units,Per Million Requests,$0.625,Create/update/delete operations
+Storage (First 25 GB),Per GB-Month,$0.00,Free tier storage
+Storage (Beyond 25 GB),Per GB-Month,$0.25,Additional storage
+Point-in-Time Recovery,Per GB-Month,$0.20,Backup storage
+GSI Storage,Per GB-Month,$0.25,Global Secondary Index storage
+GSI Read Operations,Per Million Requests,$0.125,GSI read operations
+GSI Write Operations,Per Million Requests,$0.625,GSI write operations
+
+Optimization Strategy,Potential Savings,Implementation Effort,Timeline
+Client-side Caching,30-50% read cost reduction,Medium,1-2 weeks
+Provisioned Capacity,60-80% for predictable workloads,Low,1 week
+Reserved Capacity,Up to 76% savings,Low,Immediate (1-year commitment)
+Standard-IA Storage,60% storage cost reduction,Medium,2-4 weeks
+Query Optimization,20-40% overall reduction,High,4-8 weeks
+Batch Operations,10-30% write cost reduction,Medium,2-3 weeks
